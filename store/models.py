@@ -1,3 +1,4 @@
+from django.contrib.auth.hashers import make_password
 from django.db import models
 import datetime
 
@@ -8,6 +9,9 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name_plural = "categories"
 
 
 # Products Model
@@ -30,9 +34,14 @@ class Customer(models.Model):
     email = models.EmailField(max_length=200)
     phone = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
+    in_stock = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
+
+    # Securely hash and store password
+    def set_password(self, raw_password):
+        self.password = make_password(raw_password)
 
 
 # Customer Order Model
