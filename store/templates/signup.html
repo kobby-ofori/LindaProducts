@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="container-fluid signup-page">
+    <div class="signup-row">
+        <img src="{% static 'assests/signupPic.jpg' %}" width="460">
+        <div class="signup-form-column">
+            <div>
+                <h2>MLS's</h2>
+            </div>
+            <div><input placeholder="E-mail"></div>
+            <div><input placeholder="Password"></div>
+            <div><input placeholder="Confirm Password"></div>
+            <div class="d-md-flex justify-content-md-end">
+                <button class="btn">Register</button>
+            </div>
+            <div class="back-to-signin">
+                <p>Already have an account?
+                    <a class="registration-link" href="{% url 'signin/' %}">Log in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,14 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
+{% load static %}
 <div class="nav-container">
-    <div><h2>MLS'S</h2></div>
+    <div><h2>MLS's</h2></div>
     <div>
-        <ol>
-            <li>Shop</li>
-            <li>Best Deals</li>
-        </ol>
+        <ul>
+            <li><a>Shop</a></li>
+            <li><a>Best Deals</a></li>
+        </ul>
     </div>
-    <div><input placeholder="Search product"/></div>
-    <div></div>
+
+    <div class="nav-right">
+        <div class="search-box"><input placeholder="Search product"/></div>
+        <div class="nav-icons">
+            <img src="{% static 'assests/search-interface-symbol.png' %}" width="24"/>
+            <a href="{% url 'signin/' %}"><img src="{% static 'assests/user.png' %}" width="24"/></a>
+            <a><img src="{% static 'assests/bag.png' %}" width="24"/></a>
+        </div>
+    </div>
 </div>
 {% endblock %}

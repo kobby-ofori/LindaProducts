@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0
+}
+
+/* home styles */
+.header {
+    background-color: yellow;
+}
+
+.product-sizes {
+    background-color: pink;
+}
+
+.header-carousel {
+    background-color: gray;
+}
+
+/* navbar styles */
+.nav-container {
+    background-color: #811919;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h2 {
+    color: white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.nav-container ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-container ul li {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex
+}
+
+.nav-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 0;
+    width: 400px;
+}
+
+.nav-container img {
+    margin-left: 15px;
+}
+
+.nav-icons {
+    margin-right: 15px;
+}
+
+
+/* signin styles */
+.signin-page {
+    background-image: url('../assests/mLsPinkBackground.png');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.signin-row {
+    padding-top: 10%;
+    align-items: center;
+}
+
+.signin-img {
+    border-radius: 25px 150px 50px 150px;
+}
+
+.form-column {
+    border: 1px solid black;
+    max-width: 450px;
+    border-radius: 15px;
+    padding: 30px 0 30px 30px;
+    background-color: rgba(33, 33, 33, 0.5);
+    border: none;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.form-column h2 {
+    color: #811919;
+    text-align: center;
+}
+
+.form-column input {
+    border-radius: 0px 50px;
+    padding: 5px 0px 5px 25px;
+    border: none;
+    margin: 15px 0px;
+    color: black;
+    background-color: #9D7E7E;
+}
+
+.form-column button {
+    margin-right: 15px;
+    padding: 5px 30px;
+    background-color: #9D7E7E;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -9px -6px 2px 1px #5B5151;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.form-column button:hover {
+    background-color: #811919;
+    color: white;
+    box-shadow: 9px 6px 2px 1px #5B5151;
+}
+
+
+/* signup styles */
+.signup-page {
+    background-image: url('../assests/mLsPinkBackground.png');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-row {
+    display: flex;
+}
+
+.signup-form-column {
+    border: 1px solid black;
+    max-width: 460px;
+    border-radius: 0px 15px 15px 0px;
+    padding: 30px;
+    background-color: rgba(33, 33, 33, 0.5);
+    border: none;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.signup-form-column h2 {
+    color: #811919;
+    text-align: center;
+}
+
+.signup-form-column input {
+    border-radius: 0px 50px;
+    padding: 5px 0px 5px 25px;
+    border: none;
+    margin: 15px 0px;
+    color: black;
+    background-color: #9D7E7E;
+}
+
+.signup-form-column button {
+    padding: 5px 30px;
+    background-color: #9D7E7E;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -9px -6px 2px 1px #5B5151;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.signup-form-column button:hover {
+    background-color: #811919;
+    color: white;
+    box-shadow: 9px 6px 2px 1px #5B5151;
+}

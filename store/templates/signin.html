@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="container-fluid signin-page">
+    <div class="row signin-row">
+        <div class="col">
+            <img class="img-fluid mx-auto d-block signin-img" src="{% static 'assests/signinPic.jpg' %}" width="400">
+        </div>
+        <div class="col">
+            <div class="form-column">
+                <div>
+                    <h2>MLS's</h2>
+                </div>
+                <div><input placeholder="E-mail"></div>
+                <div><input placeholder="Password"></div>
+                <div class="d-md-flex justify-content-md-end">
+                    <button class="btn">Log in</button>
+                </div>
+                <div class="register">
+                    <p>Don't have an account?
+                        <a class="registration-link" href="{% url 'signup/' %}">Register</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
