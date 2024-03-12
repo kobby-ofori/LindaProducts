@@ -42,5 +42,22 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        {% for product in products %}
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <a href="{% url 'product' product.id %}">
+                    <img alt="..." class="card-img-top" src="{{ product.image.url }}">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <h6>GHC{{ product.price }}</h6>
+                    <p class="card-text">{{ product.description }}</p>
+                    <a class="btn btn-primary" href="#">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}

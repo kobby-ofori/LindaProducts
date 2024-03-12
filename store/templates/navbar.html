@@ -14,7 +14,11 @@
         <div class="search-box"><input placeholder="Search product"/></div>
         <div class="nav-icons">
             <img src="{% static 'assests/search-interface-symbol.png' %}" width="24"/>
-            <a href="{% url 'signin/' %}"><img src="{% static 'assests/user.png' %}" width="24"/></a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">Log out</a>
+            {% else %}
+                <a href="{% url 'signin' %}"><img src="{% static 'assests/user.png' %}" width="24"/></a>
+            {% endif %}
             <a><img src="{% static 'assests/bag.png' %}" width="24"/></a>
         </div>
     </div>
